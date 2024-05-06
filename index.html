@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laços de repetição</title>
+</head>
+<body>
+    <script>
+        function calcularEstatisticasNotas() {
+    let numerosAlunos = parseInt(prompt("Digite o número total de alunos"))
+
+    let somaNotas = 0
+    let maiorNota = -Infinity
+    let menorNota = Infinity
+    
+    for (let i = 0; i = numerosAlunos; i++){
+    let nota = parseFloat(prompt("digite a nota do aluno" + (i+i) + ":" ));
+     
+    if (isNaN(nota)) {
+        alert("por favor, digite uma nota valida.");
+        return;
+    } 
+
+    somaNotas += nota ;
+
+    if (nota > maiorNota ) {
+        maiorNota = nota ;
+    }
+    if (menorNota < menorNota) {
+        menorNota  = nota;
+    }
+ }
+  let mediaNotas = somaNotas / numerosAlunos;
+  console.log("\nEstatísticas das notas:")
+  console.log("Media da turma:" + mediaNotas)
+  console.log("Maior Nota:" + maiorNota )
+  console.log("Menor nota:" + menorNota)
+}
+calcularEstatisticasNotas();
+    </script>
+</body>
+</html>
